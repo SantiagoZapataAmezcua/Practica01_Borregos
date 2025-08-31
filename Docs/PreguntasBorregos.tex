@@ -64,8 +64,76 @@ En la sesión de laboratorio realizaremos la instalación de \textbf{Docker} y d
 \textbf{Preguntas:}
 
 \begin{enumerate}[label=\textbf{\arabic*.}, itemsep=2.0em]
-  \item ¿Qué otros \textbf{SMBD} existen actualmente en el mercado?
+  \item ¿Qué otros \textbf{SMBD} existen actualmente en el mercado?\\
+    \textbf{Solucion:}\\
+    \textbf{1. Relacionales (SQL tradicionales)}\\
+Se basan en el modelo relacional propuesto por Edgar F. Codd, usan tablas con filas y columnas, ademas de usar SQL como lenguaje estándar y son ideales cuando los datos son estructurados y requieren consistencia.\\
 
+Oracle Database
+\begin{itemize}
+    \item Muy usado en corporativos grandes.
+    \item Altamente robusto, escalable y con herramientas de seguridad.
+    \item Costoso en licenciamiento.
+\end{itemize}
+
+Microsoft SQL Server
+\begin{itemize}
+    \item Popular en empresas que ya usan tecnologías Microsoft.
+    \item Buena integración con herramientas de análisis (Power BI, Excel, Azure).
+    \item Tiene versiones de pago y una gratuita (SQL Server Express).
+\end{itemize}
+
+MariaDB
+\begin{itemize}
+    \item Derivado de MySQL, creado tras la adquisición de MySQL por Oracle.
+    \item Es totalmente libre y de código abierto.
+    \item Compatible con MySQL pero con mejoras en rendimiento y nuevas funciones.
+\end{itemize}
+
+IBM Db2
+\begin{itemize}
+    \item Orientado a entornos empresariales con grandes volúmenes de datos.
+    \item Usado en sectores financieros y gubernamentales.
+\end{itemize}
+\newpage
+\textbf{2. No Relacionales (NoSQL)}\\
+Diseñados para manejar datos no estructurados o semiestructurados, como documentos, grafos o claves-valor.\\
+
+MongoDB
+\begin{itemize}
+    \item Basado en documentos JSON.
+    \item Muy flexible y escalable.
+    \item Ideal para aplicaciones web y big data.
+\end{itemize}
+
+Cassandra (Apache Cassandra)
+\begin{itemize}
+    \item Basado en un modelo distribuido.
+    \item Excelente para grandes volúmenes de datos con alta disponibilidad.
+    \item Usado por empresas como Netflix y Facebook.
+\end{itemize}
+
+Redis
+\begin{itemize}
+    \item Base de datos en memoria.
+    \item Extremadamente rápida, usada para caché y operaciones en tiempo real.
+\end{itemize}
+
+Neo4j
+\begin{itemize}
+    \item Especializada en bases de datos de grafos.
+    \item Ideal para aplicaciones de redes sociales, recomendaciones o detección de fraudes.
+\end{itemize}
+
+\textbf{3. En la nube (Database as a Service, DBaaS)}\\
+Cada vez más comunes, gestionado por un proveedor en la nube. Ofrecen escalabilidad automática y administración simplificada.\\
+
+\begin{itemize}
+    \item Amazon RDS (Relational Database Service) $\rightarrow$ soporta PostgreSQL, MySQL, MariaDB, Oracle y SQL Server.
+    \item Google Cloud SQL $\rightarrow$ permite desplegar y utilizar PostgreSQL y MySQL.
+    \item Azure SQL Database $\rightarrow$ es la versión en la nube de Microsoft SQL Server.
+    \item Firestore / DynamoDB (de Google y AWS) $\rightarrow$ NoSQL altamente escalables en la nube.
+\end{itemize}
   \item ¿Cuáles son las principales diferencias con \textbf{PostgreSQL}?
 
   \item ¿Por qué una empresa debería escoger una \textbf{base de datos open source}?
@@ -76,6 +144,9 @@ En la sesión de laboratorio realizaremos la instalación de \textbf{Docker} y d
 \end{enumerate}
 
 \bigskip
+
+
+
 
 \item \textbf{Cada integrante} deberá realizar un \textbf{reporte} en donde indiquen todos los pasos que realizaron para la instalación de \textbf{Docker} y de \textbf{PostgreSQL}. Además, deberán incluir \textbf{cómo se conectaron con DBeaver}, que es la herramienta que utilizaremos durante el curso. 
 
@@ -95,5 +166,15 @@ Cada bitácora debe ser un documento \textbf{PDF} que inicie con la palabra \tex
 \end{enumerate}
 
 \end{enumerate}
+
+\begin{thebibliography}{99}
+    \bibitem{inesem}
+        Marín, R. (2024, 30 diciembre). Los gestores de bases de datos más usados en la actualidad. Canal Informática y TICS. https://www.inesem.es/revistadigital/informatica-y-tics/los-gestores-de-bases-de-datos-mas-usados
+    \bibitem{wbadmin}
+        Wbadmin. (2025, 2 marzo). Las 10 Bases de Datos más Populares – Febrero 2025. Productos y Servicios Digitales. https://nubecolectiva.com/blog/las-10-bases-de-datos-mas-populares-febrero-2025
+    \bibitem{Gemini}
+        Google Gemini. (s. f.). Gemini. https://gemini.google.com/app?hl=es
+
+\end{thebibliography}
 
 \end{document}
