@@ -1,0 +1,99 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-noshorthands]{babel}
+\usepackage[margin=1in]{geometry}
+\usepackage{array}
+\usepackage{amsmath, amssymb, mathrsfs}
+\usepackage{fdsymbol}
+\usepackage{forest}
+\usepackage{prooftrees}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{marginnote}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\definecolor{azul}{RGB}{25,94,164}
+\setlist[itemize]{leftmargin=*, topsep=4pt}
+\setlist[enumerate]{leftmargin=*, topsep=6pt}
+
+\begin{document}
+
+% ------------------ PORTADA (tal cual tu formato) ------------------
+\pagenumbering{gobble}
+\begin{titlepage}
+\centering
+{\bfseries\LARGE Universidad Nacional Autonoma de M\'exico \par}
+\vspace{1cm}
+{\scshape\Large Facultad de Ciencias \par}
+\vspace{3cm}
+{\scshape\Huge Practica 1  \par}
+\vspace{3cm}
+{\itshape\Large Fundamentos de Bases de Datos \par}
+\vfill
+{\scshape\Huge Equipo "BORREGOS"  \par}
+\vspace{3cm}
+{\Large Aron\\ Rocks\\ Isac\\ Kevin\\ Santiago Zapata Amezcua \par}
+\vfill
+\end{titlepage}
+\clearpage
+
+% ------------------ CONTENIDO (mismo formato que antes) -----------
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+{\LARGE\bfseries\textcolor{azul}{Actividades.}}\par\vspace{0.5em}
+
+En la sesión de laboratorio realizaremos la instalación de \textbf{Docker} y del \textbf{SMBD PostgreSQL} y explicaremos de manera poco detallada los componentes en pantalla de \textbf{DBeaver}.
+
+\bigskip
+
+\begin{enumerate}[label=\roman*.]
+
+\item \textbf{Se debe de responder las siguientes preguntas en equipo} y se entrega en un documento \textbf{PDF} con el nombre \textbf{Preguntas} seguido del \textbf{nombre} que le hayan dado a su equipo.
+
+\medskip
+
+\textbf{Preguntas:}
+
+\begin{enumerate}[label=\textbf{\arabic*.}, itemsep=2.0em]
+  \item ¿Qué otros \textbf{SMBD} existen actualmente en el mercado?
+
+  \item ¿Cuáles son las principales diferencias con \textbf{PostgreSQL}?
+
+  \item ¿Por qué una empresa debería escoger una \textbf{base de datos open source}?
+
+  \item ¿Cuáles son las ventajas, para un \textbf{DBA}, de trabajar con un \textbf{SMBD open source}?
+
+  \item ¿Qué son las \textbf{bases de datos NoSQL}? Menciona \textbf{3 ventajas y 3 desventajas} contra las bases relacionales.
+\end{enumerate}
+
+\bigskip
+
+\item \textbf{Cada integrante} deberá realizar un \textbf{reporte} en donde indiquen todos los pasos que realizaron para la instalación de \textbf{Docker} y de \textbf{PostgreSQL}. Además, deberán incluir \textbf{cómo se conectaron con DBeaver}, que es la herramienta que utilizaremos durante el curso. 
+
+Cada bitácora debe ser un documento \textbf{PDF} que inicie con la palabra \textbf{Bitácora} seguida del \textbf{apellido paterno} de la persona que elaboró su documento.
+
+\medskip
+
+\textbf{Los puntos que se requieren en su reporte de instalación son:}
+
+\begin{enumerate}[label=\textbf{\arabic*.}, leftmargin=*, itemsep=0.8em]
+  \item \textbf{Sistema operativo y versión.}
+  \item \textbf{Distribución} (solamente en el caso de \textit{Linux}).
+  \item \textbf{Versión de la instalación.}
+  \item \textbf{Tiempo requerido.}
+  \item \textbf{Explicación del paso a paso} que realizaste con sus respectivas capturas de pantalla. (Adicionalmente agrega las evidencias de los pasos que consideres esenciales de la instalación).
+  \item \textbf{Comentarios y problemas} a los que te enfrentaste en la instalación.
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document}
