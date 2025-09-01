@@ -41,7 +41,7 @@
 \vfill
 {\scshape\Huge Equipo "BORREGOS"  \par}
 \vspace{3cm}
-{\Large Aron\\ Rocks\\ Isac\\ Kevin\\ Santiago Zapata Amezcua \par}
+{\Large Aaron López Mendoza \\ Rodrigo Zaldivar Alanis \\ Isaac Giovani Escobar \\ Kevin Jonathan Garduño Escobar \\ Santiago Zapata Amezcua \par}
 \vfill
 \end{titlepage}
 \clearpage
@@ -136,14 +136,46 @@ Cada vez más comunes, gestionado por un proveedor en la nube. Ofrecen escalabil
     \item Firestore / DynamoDB (de Google y AWS) $\rightarrow$ NoSQL altamente escalables en la nube.
 \end{itemize}
   \item ¿Cuáles son las principales diferencias con \textbf{PostgreSQL}?
+  \begin{table}[H]
+\centering
+\begin{tabular}{|l|p{6cm}|p{6cm}|}
+\hline
+\textbf{SMBD} & \textbf{SMBD} & \textbf{PostgreSQL} \\
+\hline
+Oracle Database & Es de código propietario de licencia & Es de código abierto \\
+\hline
+SQL Server & Es de código propietario de licencia, puramente relacional. Usa Transct-SQL o T-SQL & Es de código abierto, compatible con una amplia variedad de lenguajes de programación. Usa SQL estándar \\
+\hline
+MariaDB & Ocupa el modelo relacional puro, más flexible & Usa el modelo relacional de objetos \\
+\hline
+IBM DB2 & Es software propietario (de paga)& Es de código abierto (gratis) \\
+\hline
+MongoDB & Implementa un modelo NoSQL (BSON /JSON) & Implementa el modelo objeto-relacional \\
+\hline
+Redis & Implementa el modelo de datos llave-valor & Implementa el modelo objeto-relacional \\
+\hline
+Neo4j & Implementa un modelo NoSQL orientado a gráficas & Implementa el modelo objeto-relacional \\
+\hline
+Amazon RDS & No es un motor de bases de datos, administra motores como SQL & Motor de bases de datos objeto-relacionales \\
+\hline
+Google Cloud SQL & No es un motor de bases de datos, administra motores como SQL & Motor de bases de datos objeto-relacionales \\
+\hline
+Azure SQL Database & Gestionado en la nube y basado en SQL Server & Código abierto, motor de bases de datos \\
+\hline
+Firestore & Base de datos NoSQL orientada a documentos, en la nube & Motor de base de datos relacional \\
+\hline
+\end{tabular}
+\label{tab:postgres-comparativa}
+\end{table}
+Cabe aclarar que presenta varias diferencias de sintaxis menores con todos los SMBD que usan SQL.
 
   \item ¿Por qué una empresa debería escoger una \textbf{base de datos open source}?
  \begin{itemize}
       \item \textbf{Costos:}
-            Como primer punto es importante destacar que las Bases de Datos de codigo abierto no cobran licencias de uso o para acceder a funciones especiales. Permitiendo estudiar, modificar y redistribuir el codigo. Eso evita la dependencia a los provedores para parches o nuevas funciones. Inclusive la Comision Europea ha declarado que al priorizar el codigo abierto, el sector publico puede reducir el costo total de la propiedad digital incentivando la autonomia digital. 
+            Como primer punto es importante destacar que las Bases de Datos de codigo abierto no cobran licencias de uso o para acceder a funciones especiales. Permitiendo estudiar, modificar y redistribuir el codigo. Eso evita la dependencia a los provedores para parches o nuevas funciones. Inclusive la Comision Europea ha declarado que al priorizar el codigo abierto, el sector publico puede reducir el costo total de la propiedad digital incentivando la autonomia digital.
         \item \textbf{Comunidad:}
             Al ser recursos de acceso publico el avance y mejoramiento asi como  la deteccion de vulnerabilidades y el analisis de seguridad se vuelve parte de las labores comunitarias, permitinedo a organizaciones e individuos la participacion en las actualizaciones y cambios para el bien del recurso y la comunidad en general.
-        
+
         \item \textbf{Versatilidad y Portabilidad:}
             Con acceso al código y formatos estándar, se da la posibilidad de movilizarte entre nubes y proveedores de servicio gestionado, sin quedar enlazado a un prevedoor. Esto facilita estrategias y la reducción de riesgos.
 
@@ -165,34 +197,34 @@ Las principales ventajas que nos puede ofrecer al manejar un SMBD open source so
 \textbf{Escalabilidad}: Los SMBD como PostgreSQL permiten una escalabilidad sencilla, es decir, puede manejar grandes volúmenes de datos y usuarios concurrentes sin tener problemas de rendimiento o disponibilidad. Es buena idea si el servicio o aplicación crece rápidamente y se requieren recursos adicionales.
 
   \item ¿Qué son las \textbf{bases de datos NoSQL}? Menciona \textbf{3 ventajas y 3 desventajas} contra las bases relacionales.\\
-  Las \textbf{bases de datos NoSQL} son bases de datos no relacionales que almacenan los datos de forma diferente a las bases de datos 
-  relacionales, es decir, las bases de datos NoSQL no almacenan los datos en tablas relacionales basadas en reglas, de ahí que algunas 
-  personas dicen que el término NoSQL se refiere a "no SQL" o también "no solo SQL". El modelo de esquema de las bases de datos NoSQL es 
+  Las \textbf{bases de datos NoSQL} son bases de datos no relacionales que almacenan los datos de forma diferente a las bases de datos
+  relacionales, es decir, las bases de datos NoSQL no almacenan los datos en tablas relacionales basadas en reglas, de ahí que algunas
+  personas dicen que el término NoSQL se refiere a "no SQL" o también "no solo SQL". El modelo de esquema de las bases de datos NoSQL es
   flexible y permiten los datos no estructurados como por ejemplo documentos, pares clave-valor, columnas o gráficas.\\
   \textbf{Ventajas} de las \textit{bases de datos NoSQL}:
   \begin{itemize}
-      \item \textbf{Escalabilidad:\\} 
-      Las bases de datos NoSQL son capaces de poder aumentar la capacidad conforme los datos y el tráfico crecen, además tienen funciones 
+      \item \textbf{Escalabilidad:\\}
+      Las bases de datos NoSQL son capaces de poder aumentar la capacidad conforme los datos y el tráfico crecen, además tienen funciones
       que ayudan al ajuste de escala automático.
-      \item \textbf{Consultas más rápidas:\\} 
-      Las bases de datos NoSQL están optimizadas para consultas rápidas, además por lo general no usan uniones complejas en las búsquedas 
+      \item \textbf{Consultas más rápidas:\\}
+      Las bases de datos NoSQL están optimizadas para consultas rápidas, además por lo general no usan uniones complejas en las búsquedas
       y por lo tanto devuelven los resultados de manera más rápida y estas no necesitan normalización como las bases de datos relacionales.
-      \item \textbf{Desarrollo ágil:\\} 
-      Gracias a la flexibilidad con la que cuentan las bases de datos NoSQL los desarrolladores no se tienen que preocupar mucho en la 
-      transformación de datos y pueden iterar sobre ellos más rápidamente ya que la base de datos NoSQL almacena varios tipos de datos aún 
+      \item \textbf{Desarrollo ágil:\\}
+      Gracias a la flexibilidad con la que cuentan las bases de datos NoSQL los desarrolladores no se tienen que preocupar mucho en la
+      transformación de datos y pueden iterar sobre ellos más rápidamente ya que la base de datos NoSQL almacena varios tipos de datos aún
       en su formato original y que el modelo se adapte conforme lo ocupes y así desarrollar aplicaciones de manera más eficiente.
   \end{itemize}
   \textbf{Desventajas} de las \textit{bases de datos NoSQL}:
   \begin{itemize}
-      \item \textbf{Madurez:\\} 
-      Dado que las bases de datos NoSQL son relativamente nuevas a diferencia de las bases de datos relacionales, pueden carecer de madurez, 
-      además en general los desarrolladores tienen menos experiencia al trabajar con estas bases de datos, o pueden verse afectados por no 
+      \item \textbf{Madurez:\\}
+      Dado que las bases de datos NoSQL son relativamente nuevas a diferencia de las bases de datos relacionales, pueden carecer de madurez,
+      además en general los desarrolladores tienen menos experiencia al trabajar con estas bases de datos, o pueden verse afectados por no
       encontrar suficiente documentación o ayuda para ciertos problemas.
-      \item \textbf{Lenguaje:\\} 
-      Las bases de datos NoSQL no tienen un lenguaje estándar como las relacionales que es SQL, entonces, cada base de datos puede tener su 
+      \item \textbf{Lenguaje:\\}
+      Las bases de datos NoSQL no tienen un lenguaje estándar como las relacionales que es SQL, entonces, cada base de datos puede tener su
       propio lenguaje para la administración y consultas de los datos.
-      \item \textbf{Limitaciones:\\} 
-      En algunos casos las bases de datos NoSQL no garantizan la protección de integridad de los datos ni un nivel alto en la consistencia 
+      \item \textbf{Limitaciones:\\}
+      En algunos casos las bases de datos NoSQL no garantizan la protección de integridad de los datos ni un nivel alto en la consistencia
       de los datos a como lo hacen las bases de datos relacionales.
   \end{itemize}
 \end{enumerate}
@@ -202,7 +234,7 @@ Las principales ventajas que nos puede ofrecer al manejar un SMBD open source so
 
 
 
-\item \textbf{Cada integrante} deberá realizar un \textbf{reporte} en donde indiquen todos los pasos que realizaron para la instalación de \textbf{Docker} y de \textbf{PostgreSQL}. Además, deberán incluir \textbf{cómo se conectaron con DBeaver}, que es la herramienta que utilizaremos durante el curso. 
+\item \textbf{Cada integrante} deberá realizar un \textbf{reporte} en donde indiquen todos los pasos que realizaron para la instalación de \textbf{Docker} y de \textbf{PostgreSQL}. Además, deberán incluir \textbf{cómo se conectaron con DBeaver}, que es la herramienta que utilizaremos durante el curso.
 
 Cada bitácora debe ser un documento \textbf{PDF} que inicie con la palabra \textbf{Bitácora} seguida del \textbf{apellido paterno} de la persona que elaboró su documento.
 
@@ -226,6 +258,12 @@ Cada bitácora debe ser un documento \textbf{PDF} que inicie con la palabra \tex
         Marín, R. (2024, 30 diciembre). Los gestores de bases de datos más usados en la actualidad. Canal Informática y TICS. https://www.inesem.es/revistadigital/informatica-y-tics/los-gestores-de-bases-de-datos-mas-usados
     \bibitem{wbadmin}
         Wbadmin. (2025, 2 marzo). Las 10 Bases de Datos más Populares – Febrero 2025. Productos y Servicios Digitales. https://nubecolectiva.com/blog/las-10-bases-de-datos-mas-populares-febrero-2025
+
+    \bibitem{googlecloud}
+        Google Cloud. (s. f.). \textit{PostgreSQL vs SQL Server: ¿Cuáles son las diferencias clave?}. Recuperado de https://cloud.google.com/learn/postgresql-vs-sql
+
+    \bibitem{aws}
+        Amazon Web Services. (s. f.). \textit{MariaDB o PostgreSQL: diferencia entre bases de datos relacionales de código abierto}. Recuperado de https://aws.amazon.com/es/compare/the-difference-between-mariadb-and-postgresql/
     \bibitem{Cloud}
         What is NoSQL? Databases Explained | Google Cloud. (s. f.-b). Google Cloud. https://cloud.google.com/discover/what-is-nosql
     \bibitem{arsys}
